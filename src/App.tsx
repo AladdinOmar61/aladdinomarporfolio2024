@@ -1,22 +1,12 @@
-import './App.css'
-import {Grommet} from 'grommet'
-
-const theme = {
-  global: {
-    font: {
-      family: 'Roboto',
-      size: '14px',
-      height: '20px',
-    },
-  },
-};
+import { Box, Grid } from 'grommet'
 
 function App() {
 
+  //TODO: continue looking at storybook documentation for grommet
   return (
-    <Grommet theme={theme}>
-      <p>Aladdin Portfolio</p>
-    </Grommet>
+    <Box>
+      <Grid></Grid>
+    </Box>
   )
 }
 
