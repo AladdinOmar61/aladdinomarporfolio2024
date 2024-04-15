@@ -28,7 +28,8 @@ function App() {
   return (
     <Grommet theme={theme} full>
       <Box>
-        <Heading level={1} textAlign="center" alignSelf="center">Aladdin Omar Portfolio</Heading>
+        <Heading level={1} style={{fontSize: 100}} textAlign="center" alignSelf="center">Aladdin Omar</Heading>
+        <Box></Box>
       </Box>
       <Box direction='row' justify='center' alignContent={'around'} align={'center'} flex={true} gap={"large"}>
         {projArr.map((proj, i) => {
