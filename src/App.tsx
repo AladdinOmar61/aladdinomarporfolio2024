@@ -59,12 +59,7 @@ function App() {
           </Heading>
         </Box>
       </Box>
-      <Box pad="medium" style={{ backgroundColor: "#FF4444" }}>
-        <Heading level={1} textAlign="center" alignSelf="center">
-          My Projects
-        </Heading>
-        <Projects />
-      </Box>
+      <Projects />
       <Box pad="medium">
         <Box style={{ width: "100%", height: "500px" }}>
           <Heading level={1} textAlign="center" alignSelf="center">
