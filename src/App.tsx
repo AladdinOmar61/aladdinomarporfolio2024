@@ -39,13 +39,13 @@ function App() {
         align="center"
         style={{
           width: "100%",
-          height: 50,
+          height: 70,
           backgroundColor: "black",
           color: "white",
         }}
       >
-        <Anchor>Projects</Anchor>
-        <Anchor>About Me</Anchor>
+        <Anchor size="xlarge">Projects</Anchor>
+        <Anchor size="xlarge">About Me</Anchor>
       </Nav>
       <Box>
         <Box style={{ width: "100%", height: "25vh" }}>

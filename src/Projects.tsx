@@ -32,25 +32,25 @@ function Projects() {
       </Heading>
       <Grid columns="medium" gap="large" pad={{ bottom: "large" }}>
         {projArr.map((proj, i) => {
-          let cardSize;
-          switch (size) {
-            case "medium":
-              cardSize = "medium";
-              break;
-            case "large":
-              cardSize = "large";
-              break;
-            case "xlarge":
-              cardSize = "xlarge";
-              break;
-          }
+          // let cardSize;
+          // switch (size) {
+          //   case "medium":
+          //     cardSize = "medium";
+          //     break;
+          //   case "large":
+          //     cardSize = "large";
+          //     break;
+          //   case "xlarge":
+          //     cardSize = "xlarge";
+          //     break;
+          // }
 
           return (
             <Card
               key={i}
               background="white"
-              width={cardSize}
-              height={cardSize}
+              width={'medium'}
+              height={'medium'}
               fill={"horizontal"}
             >
               <CardHeader alignSelf="center">{proj.name}</CardHeader>
@@ -94,6 +94,11 @@ function Projects() {
                       border: "solid red 2px",
                       borderRadius: 50,
                       padding: 3,
+                      transition: "background-color 0.3s ease",
+                    }}
+                    hoverIndicator={{
+                      background: "red",
+                      elevation: "medium",
                     }}
                     icon={
                       <Domain style={{ width: 80, height: 35 }} color="black" />
