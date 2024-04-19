@@ -12,10 +12,9 @@ import {
 } from "grommet";
 import { Domain, Github } from "grommet-icons";
 import joujou from "../assets/joujou.jpg";
-import easymeets from "../assets/Easymeets-Web-Image.png";
 
 const projArr = [
-  { name: "Easymeets", image: easymeets },
+  { name: "project1", image: joujou },
   { name: "project2", image: joujou },
   { name: "project3", image: joujou },
   { name: "project4", image: joujou },
@@ -27,7 +26,7 @@ function Projects() {
       <Heading level={1} textAlign="center" alignSelf="center">
         My Projects
       </Heading>
-      <Box justify="center" direction="row">
+      <Box justify="center" direction="row" animation={["fadeIn", "slideDown"]}>
         <Grid columns="medium" gap="large" pad={{ bottom: "large" }} align="center" justify="center" justifyContent="center">
           {projArr.map((proj, i) => {
 

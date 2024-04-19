@@ -3,7 +3,7 @@ import aboutMeImg from "../assets/AboutMeImg.jpg"
 
 function About() {
     return (
-        <Box justify="around" pad={{vertical: "large"}}>
+        <Box justify="around" pad={{ vertical: "large" }}>
             <Heading level={1} textAlign="center" alignSelf="center">
                 About Me
             </Heading>
@@ -13,9 +13,9 @@ function About() {
                 justify="around"
             >
                 <Box
-                    style={{ height: 300, width: 300, minWidth: 300}}
+                    style={{ height: 300, width: 300, minWidth: 300 }}
                     border={{ color: "black", size: "small" }}
-                    margin={{vertical: "small"}}
+                    margin={{ vertical: "small" }}
                     animation={["fadeIn", "slideDown"]}
                 >
                     <Image
@@ -28,30 +28,18 @@ function About() {
                 <Paragraph
                     responsive={true}
                     size="xlarge"
-                    margin={{vertical: "medium", horizontal: "xlarge"}}
+                    margin={{ vertical: "medium", horizontal: "xlarge" }}
                     fill
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I am a web-developer and recent computer science graduate. I want to help businesses come to life with code and join a team that solves a relevant problem because convenience is key to enjoying life. I want this world to be a happy and comfortable place to live in and I believe these problems we solve will contribute greatly to my goal…and I just genuinely love to code, it feels like a fun puzzle solving game to me.
                 </Paragraph>
                 <Paragraph
                     responsive={true}
                     size="xlarge"
-                    margin={{vertical: "medium", horizontal: "xlarge"}}
+                    margin={{ vertical: "medium", horizontal: "xlarge" }}
                     fill
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I was a student at a web-dev bootcamp called general assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science where I am currently finishing up my last semester in CSI. In the future, I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
                 </Paragraph>
             </Box>
         </Box>

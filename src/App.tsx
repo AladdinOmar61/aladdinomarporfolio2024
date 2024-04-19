@@ -32,8 +32,8 @@ function App() {
     <Grommet theme={theme} full style={{ minHeight: "100vh" }}>
       <NavBar />
       <TopBanner />
-      <Projects />
       <About />
+      <Projects />
       <Contact />
     </Grommet>
   );
