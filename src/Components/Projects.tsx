@@ -12,12 +12,11 @@ import {
 } from "grommet";
 import { Domain, Github } from "grommet-icons";
 import joujou from "../assets/joujou.jpg";
+import peterpan from "../assets/Peterpan.png";
 
 const projArr = [
-  { name: "project1", image: joujou },
-  { name: "project2", image: joujou },
-  { name: "project3", image: joujou },
-  { name: "project4", image: joujou },
+  { name: "JOUJOU", image: joujou, website: "https://joujou.com" },
+  { name: "Peter Pan's", image: peterpan, website: "http://peterpan.surge.sh", github: "https://github.com/AladdinOmar61/peter-pan"},
 ];
 
 function Projects() {
@@ -42,7 +41,7 @@ function Projects() {
                   <Text size="large">{proj.name}</Text>
                 </CardHeader>
                 <CardBody margin="xsmall" border={{color: 'black'}} round>
-                  <Image src={proj.image} fit="contain" />
+                  <Image style={{ borderRadius: '7%' }} src={proj.image} fit="contain" />
                 </CardBody>
                 <CardFooter pad="small">
                   <Box
@@ -52,30 +51,32 @@ function Projects() {
                     justify="center"
                     alignContent="center"
                   >
-                    <Button
-                      style={{
-                        border: "solid red 2px",
-                        borderRadius: 50,
-                        padding: 3,
-                        transition: "background-color 0.3s ease",
-                      }}
-                      hoverIndicator={{
-                        background: "red",
-                        elevation: "medium",
-                      }}
-                      icon={
-                        <Box hoverIndicator="white" round="full">
-                          <Github
-                            style={{
-                              width: 80,
-                              height: 35,
-                              transition: "color 0.3s ease",
-                            }}
-                            color="black"
-                          />
-                        </Box>
-                      }
-                    />
+                    {proj.github &&
+                      <Button
+                        onClick={() => window.open(proj.github, "_blank")}
+                        style={{
+                          border: "solid red 2px",
+                          borderRadius: 50,
+                          padding: 3,
+                          transition: "background-color 0.3s ease",
+                        }}
+                        hoverIndicator={{
+                          background: "red",
+                          elevation: "medium",
+                        }}
+                        icon={
+                          <Box hoverIndicator="white" round="full">
+                            <Github
+                              style={{
+                                width: 80,
+                                height: 35,
+                                transition: "color 0.3s ease",
+                              }}
+                              color="black"
+                            />
+                          </Box>
+                        }
+                      />}
                     <Button
                       style={{
                         border: "solid red 2px",
