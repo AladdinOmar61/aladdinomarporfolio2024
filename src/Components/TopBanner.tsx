@@ -4,8 +4,6 @@ import Banner from "../assets/BannerImg.jpg";
 function TopBanner() {
     return (
         <Box>
-            {/* <Heading>Aladdin Omar</Heading>
-            <Image src={Banner} fit="contain"/> */}
             <Box height='30vh' style={{
                 backgroundImage: `url(${Banner})`,
                 backgroundSize: 'cover',
@@ -15,9 +13,10 @@ function TopBanner() {
             }}>
                 <Heading
                     level={1}
-                    style={{ fontSize: 100 }}
+                    style={{ fontSize: 100, lineHeight: 1}}
                     textAlign="center"
                     alignSelf="center"
+
                 >
                     Aladdin Omar
                 </Heading>

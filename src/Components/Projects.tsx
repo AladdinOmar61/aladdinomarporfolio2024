@@ -13,10 +13,12 @@ import {
 import { Domain, Github } from "grommet-icons";
 import joujou from "../assets/joujou.jpg";
 import peterpan from "../assets/Peterpan.png";
+import easymeets from "../assets/Easymeets-Web-Image.png";
 
 const projArr = [
   { name: "JOUJOU", image: joujou, website: "https://joujou.com" },
-  { name: "Peter Pan's", image: peterpan, website: "http://peterpan.surge.sh", github: "https://github.com/AladdinOmar61/peter-pan"},
+  { name: "Peter Pan's", image: peterpan, website: "http://peterpan.surge.sh", github: "https://github.com/AladdinOmar61/peter-pan" },
+  { name: "Easymeets", image: easymeets, website: "https://easymeetsweb.netlify.app", github: "https://github.com/AladdinOmar61/easymeetsweb" }
 ];
 
 function Projects() {
@@ -40,7 +42,7 @@ function Projects() {
                 <CardHeader alignSelf="center">
                   <Text size="large">{proj.name}</Text>
                 </CardHeader>
-                <CardBody margin="xsmall" border={{color: 'black'}} round>
+                <CardBody margin="xsmall" border={{ color: 'black' }} round>
                   <Image style={{ borderRadius: '7%' }} src={proj.image} fit="contain" />
                 </CardBody>
                 <CardFooter pad="small">
@@ -78,6 +80,7 @@ function Projects() {
                         }
                       />}
                     <Button
+                      onClick={() => window.open(proj.website, "_blank")}
                       style={{
                         border: "solid red 2px",
                         borderRadius: 50,
