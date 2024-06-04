@@ -6,7 +6,7 @@ import Projects from "./Components/Projects";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import TopBanner from "./Components/TopBanner";
-import NavBar from "./Components/NavBar";
+// import NavBar from "./Components/NavBar";
 
 function App() {
   const theme = {
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <Grommet theme={theme} full style={{ minHeight: "100vh" }}>
-      <NavBar />
+      {/* <NavBar /> */}
       <TopBanner />
       <About />
       <Projects />

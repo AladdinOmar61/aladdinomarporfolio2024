@@ -12,7 +12,7 @@ function Projects() {
       <Heading level={1} textAlign="center" alignSelf="center">
         My Projects
       </Heading>
-      <Heading level={2} textAlign="center" alignSelf="center">Hover over one to get a brief description!</Heading>
+      {/* <Heading level={2} textAlign="center" alignSelf="center">Hover over one to get a brief description!</Heading> */}
       <Box justify="center" direction="row" animation={["fadeIn", "slideDown"]}>
         <Grid columns="medium" gap="large" pad={{ bottom: "large" }} align="center" justify="center" justifyContent="center">
           {/* TODO: get showDesc props to work here */}
