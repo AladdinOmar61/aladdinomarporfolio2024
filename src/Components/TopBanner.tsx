@@ -1,5 +1,5 @@
 import { Box, Heading } from "grommet";
-import Banner from "../assets/BannerImg.jpg";
+import Banner from "../assets/City Bg Banner.png";
 
 function TopBanner() {
     return (

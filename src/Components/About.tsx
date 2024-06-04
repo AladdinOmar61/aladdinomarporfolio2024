@@ -39,7 +39,7 @@ function About() {
                     margin={{ vertical: "medium", horizontal: "xlarge" }}
                     fill
                 >
-                    I was a student at a web-dev bootcamp called general assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science where I am currently finishing up my last semester in CSI. In the future, I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
+                    Previously, I was part of a software engineering immersive program called General Assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science in CSI. In the future, I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
                 </Paragraph>
             </Box>
         </Box>
