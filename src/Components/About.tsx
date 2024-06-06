@@ -1,5 +1,5 @@
 import { Paragraph, Box, Heading, Image, Tabs, Tab, Grommet } from "grommet"
-import aboutMeImg from "../assets/AboutMeImg.jpg"
+import Portrait from "../assets/Portrait 2024.jpg"
 
 const tabTheme = {
     tabs: {
@@ -49,7 +49,7 @@ function About() {
                         responsive={true}
                     >
                         <Image
-                            src={aboutMeImg}
+                            src={Portrait}
                             fit="cover"
                             alt="About Me Image"
                             style={{ width: "100%", height: "100%" }}
@@ -92,55 +92,6 @@ function About() {
                             </Paragraph>
                         </Tab>
                     </Tabs>
-
-                    {/* <Box
-                    direction="row"
-                    align="center"
-                    justify="start"
-                    responsive={true}>
-                    <Box
-                        direction="column"
-                        align="center"
-                        justify="around">
-                        <Heading> Currently...</Heading>
-                        <Paragraph
-                            responsive={true}
-                            size="xlarge"
-                            margin={{ vertical: "medium", horizontal: "xlarge" }}
-                            fill
-                        >
-                            I am a web-developer and recent computer science graduate. I want to help businesses come to life with code and join a team that solves a relevant problem because I believe convenience is key to living a more enjoyable life.
-                        </Paragraph>
-                    </Box>
-                    <Box
-                        direction="column"
-                        align="center"
-                        justify="around">
-                        <Heading>Previously...</Heading>
-                        <Paragraph
-                            responsive={true}
-                            size="xlarge"
-                            margin={{ vertical: "medium", horizontal: "xlarge" }}
-                            fill
-                        >
-                            I was part of a software engineering immersive program called General Assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science in CSI.
-                        </Paragraph>
-                    </Box>
-                    <Box
-                        direction="column"
-                        align="center"
-                        justify="around">
-                        <Heading>In the future...</Heading>
-                        <Paragraph
-                            responsive={true}
-                            size="xlarge"
-                            margin={{ vertical: "medium", horizontal: "xlarge" }}
-                            fill
-                        >
-                            I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
-                        </Paragraph>
-                    </Box>
-                </Box> */}
                 </Box>
             </Box>
         </Grommet>
