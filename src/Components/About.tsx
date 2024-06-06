@@ -1,48 +1,149 @@
-import { Paragraph, Box, Heading, Image } from "grommet"
+import { Paragraph, Box, Heading, Image, Tabs, Tab, Grommet } from "grommet"
 import aboutMeImg from "../assets/AboutMeImg.jpg"
+
+const tabTheme = {
+    tabs: {
+        extend: {
+            fontSize: '50px',
+        }
+    },
+    tab: {
+        extend: {
+            fontSize: '50px',
+        },
+        active: {
+            color: 'red',
+        },
+        border: {
+            color: "black",
+            active: {
+                side: 'bottom',
+                size: 'small',
+                color: 'red',
+            }
+        },
+        color: 'black',
+        margin: 'medium',
+        pad: 'small',
+    },
+};
 
 function About() {
     return (
-        <Box justify="around" pad={{ vertical: "large" }}>
-            <Heading level={1} textAlign="center" alignSelf="center">
-                About Me
-            </Heading>
-            <Box
-                direction="column"
-                align="center"
-                justify="around"
-            >
+        <Grommet theme={tabTheme}>
+            <Box justify="around" pad={{ vertical: "large" }}>
+                <Heading level={1} textAlign="center" alignSelf="center">
+                    About Me
+                </Heading>
                 <Box
-                    style={{ height: 300, width: 300, minWidth: 300 }}
-                    border={{ color: "black", size: "small" }}
-                    margin={{ vertical: "small" }}
-                    animation={["fadeIn", "slideDown"]}
+                    direction="column"
+                    align="center"
+                    justify="around"
+                    responsive={true}
                 >
-                    <Image
-                        src={aboutMeImg}
-                        fit="cover"
-                        alt="About Me Image"
-                        style={{ width: "100%", height: "100%" }}
-                    />
+                    <Box
+                        style={{ height: 300, width: 300, minWidth: 300 }}
+                        border={{ color: "black", size: "small" }}
+                        margin={{ vertical: "small" }}
+                        animation={["fadeIn", "slideDown"]}
+                        responsive={true}
+                    >
+                        <Image
+                            src={aboutMeImg}
+                            fit="cover"
+                            alt="About Me Image"
+                            style={{ width: "100%", height: "100%" }}
+                        />
+                    </Box>
+                    <Tabs >
+                        <Tab title="Currently...">
+                            <Box
+                                direction="column"
+                                align="center"
+                                justify="around">
+                                <Paragraph
+                                    responsive={true}
+                                    size="xlarge"
+                                    margin={{ vertical: "medium", horizontal: "xlarge" }}
+                                    fill
+                                >
+                                    I am a web-developer and recent computer science graduate. I want to help businesses come to life with code and join a team that solves a relevant problem because I believe convenience is key to living a more enjoyable life.
+                                </Paragraph>
+                            </Box>
+                        </Tab>
+                        <Tab title="Previously...">
+                            <Paragraph
+                                responsive={true}
+                                size="xlarge"
+                                margin={{ vertical: "medium", horizontal: "xlarge" }}
+                                fill
+                            >
+                                I was part of a software engineering immersive program called General Assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science in CSI.
+                            </Paragraph>
+                        </Tab>
+                        <Tab title="In the future...">
+                            <Paragraph
+                                responsive={true}
+                                size="xlarge"
+                                margin={{ vertical: "medium", horizontal: "xlarge" }}
+                                fill
+                            >
+                                I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
+                            </Paragraph>
+                        </Tab>
+                    </Tabs>
+
+                    {/* <Box
+                    direction="row"
+                    align="center"
+                    justify="start"
+                    responsive={true}>
+                    <Box
+                        direction="column"
+                        align="center"
+                        justify="around">
+                        <Heading> Currently...</Heading>
+                        <Paragraph
+                            responsive={true}
+                            size="xlarge"
+                            margin={{ vertical: "medium", horizontal: "xlarge" }}
+                            fill
+                        >
+                            I am a web-developer and recent computer science graduate. I want to help businesses come to life with code and join a team that solves a relevant problem because I believe convenience is key to living a more enjoyable life.
+                        </Paragraph>
+                    </Box>
+                    <Box
+                        direction="column"
+                        align="center"
+                        justify="around">
+                        <Heading>Previously...</Heading>
+                        <Paragraph
+                            responsive={true}
+                            size="xlarge"
+                            margin={{ vertical: "medium", horizontal: "xlarge" }}
+                            fill
+                        >
+                            I was part of a software engineering immersive program called General Assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science in CSI.
+                        </Paragraph>
+                    </Box>
+                    <Box
+                        direction="column"
+                        align="center"
+                        justify="around">
+                        <Heading>In the future...</Heading>
+                        <Paragraph
+                            responsive={true}
+                            size="xlarge"
+                            margin={{ vertical: "medium", horizontal: "xlarge" }}
+                            fill
+                        >
+                            I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
+                        </Paragraph>
+                    </Box>
+                </Box> */}
                 </Box>
-                <Paragraph
-                    responsive={true}
-                    size="xlarge"
-                    margin={{ vertical: "medium", horizontal: "xlarge" }}
-                    fill
-                >
-                    I am a web-developer and recent computer science graduate. I want to help businesses come to life with code and join a team that solves a relevant problem because convenience is key to enjoying life. I want this world to be a happy and comfortable place to live in and I believe these problems we solve will contribute greatly to my goal…and I just genuinely love to code, it feels like a fun puzzle solving game to me.
-                </Paragraph>
-                <Paragraph
-                    responsive={true}
-                    size="xlarge"
-                    margin={{ vertical: "medium", horizontal: "xlarge" }}
-                    fill
-                >
-                    Previously, I was part of a software engineering immersive program called General Assembly, where I learned full stack web development using react frontend with nodeJS using express and MongoDB. From there I carried on to pursue a bachelors in computer science in CSI. In the future, I would like to look for a team that is passionate about taking real world problems and solving them with code to bring a solution that will help many.
-                </Paragraph>
             </Box>
-        </Box>
+        </Grommet>
     )
 }
 
