@@ -10,14 +10,14 @@ import {
 } from "grommet";
 import { Domain, Github } from "grommet-icons";
 import joujou from "../assets/joujou.jpg";
-import peterpan from "../assets/Peterpan.png";
-import easymeets from "../assets/Easymeets-Web-Image.png";
+import MadeByMama from "../assets/made_by_mama.png";
 // import { useState } from "react";
 
 const projArr = [
     { name: "JOUJOU", image: joujou, website: "https://joujou.com", showDesc: false },
-    { name: "Peter Pan's", image: peterpan, website: "http://peterpan.surge.sh", github: "https://github.com/AladdinOmar61/peter-pan", showDesc: false },
-    { name: "Easymeets", image: easymeets, website: "https://easymeetsweb.netlify.app", github: "https://github.com/AladdinOmar61/easymeetsweb", showDesc: false }
+    { name: "Made by Mama", image: MadeByMama, website: "https://madebymama.netlify.app", github: "https://github.com/AladdinOmar61/mona-store", showDesc: false },
+    { name: "CSI API/Car Generator", github: "https://github.com/AladdinOmar61/csiAPI" },
+    { name: "Lockit", github: "https://github.com/AladdinOmar61/Lockit" }
 ];
 
 function ProjectCard() {
@@ -34,8 +34,8 @@ function ProjectCard() {
                             width={'medium'}
                             height={'medium'}
                             fill={"horizontal"}
-                            // onMouseEnter={() => { setShowDesc(true) }}
-                            // onMouseLeave={() => { setShowDesc(false) }}
+                        // onMouseEnter={() => { setShowDesc(true) }}
+                        // onMouseLeave={() => { setShowDesc(false) }}
                         >
                             <CardHeader alignSelf="center">
                                 <Text size="large">{proj.name}</Text>
@@ -78,22 +78,23 @@ function ProjectCard() {
                                                 </Box>
                                             }
                                         />}
-                                    <Button
-                                        onClick={() => window.open(proj.website, "_blank")}
-                                        style={{
-                                            border: "solid red 2px",
-                                            borderRadius: 50,
-                                            padding: 3,
-                                            transition: "background-color 0.3s ease",
-                                        }}
-                                        hoverIndicator={{
-                                            background: "red",
-                                            elevation: "medium",
-                                        }}
-                                        icon={
-                                            <Domain style={{ width: 80, height: 35 }} color="black" />
-                                        }
-                                    />
+                                    {proj.website &&
+                                        <Button
+                                            onClick={() => window.open(proj.website, "_blank")}
+                                            style={{
+                                                border: "solid red 2px",
+                                                borderRadius: 50,
+                                                padding: 3,
+                                                transition: "background-color 0.3s ease",
+                                            }}
+                                            hoverIndicator={{
+                                                background: "red",
+                                                elevation: "medium",
+                                            }}
+                                            icon={
+                                                <Domain style={{ width: 80, height: 35 }} color="black" />
+                                            }
+                                        />}
                                 </Box>
                             </CardFooter>
                         </Card>
